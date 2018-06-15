@@ -16,7 +16,7 @@ function compareScore(){
 	scr_request.classList.add('isHidden'); //adds class 'isHidden' to set display: none;
 	
 	finalScore.classList.remove('isHidden'); //removes class 'isHidden'
-	finalScore.classList.add('isVisible'); //adds class 'isVisible' to set display: block;
+	finalScore.classList.add('flashit'); //adds class 'flashit' to make 'Final Score' blink
 
 	if(isNaN(royals) || isNaN(visitor)){
 		alert("Please enter a score for each team");
