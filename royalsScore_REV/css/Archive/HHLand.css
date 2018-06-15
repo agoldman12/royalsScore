@@ -1,0 +1,25 @@
+	#page_wrapper {
+   		margin-top: 130px;
+	}
+	label {
+		width: 45px;
+		width: 4.74vw;
+	}
+	input {
+		margin-bottom: 15px;
+	}
+	#bigBox {
+		padding-bottom: 40px;
+		padding-bottom: 3.99vw;
+	}
+	#countdown > div {
+		padding: 15px; 
+	}
+	#openingDay {
+		height: 160px;
+		height: 15.98vw;
+	}
+	#countdown > div.marLeft {
+		margin-left: 50px;	
+		margin-left: 5.49vw;
+	}

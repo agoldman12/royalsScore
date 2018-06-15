@@ -1,0 +1,293 @@
+/*@import url('reset.css');*/
+html {
+	background: url(../img/kauffman2.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#page_wrapper {
+		margin-top: 233px;
+	}
+h1{
+	color: royalblue;
+	text-shadow: 1px 1px 1px #DAA520;
+}
+h1#playball {
+	margin-left: 493px;
+	margin-left: 34.23vw;
+    font-size: 100px;
+    font-size: 6.94vw;
+    margin-bottom: 0;
+    margin-top: 100px;
+    margin-top: 6.94vw;
+}
+#pizzaWin, #win, #lose, #scoreRequest {
+	text-align: center;
+}
+label {
+	float: left;
+    text-align: right;
+    margin-right: 10px;
+    margin-right: 0.69vw;
+    width: 45px;
+    width: 3.12vw;
+}
+input {
+	display: block;
+	margin-bottom: 10px;
+	margin-bottom: 0.69vw;
+	border-radius: 10px;
+	border-radius: 0.69vw;
+}
+.button {
+	background: royalblue;
+	border: 1px solid goldenrod;
+	color: white;
+	border-radius: 10px;
+	border-radius: 0.69vw;
+	box-shadow: 1px 1px 2px navy;
+	padding: 4px;
+	padding: 0.27vw;
+	text-decoration: none;
+}
+.button:hover {
+	background: lightblue;
+	color: darkblue;
+}
+
+#bigBox {
+	margin: 0 auto;
+    width: 45%;
+    /*margin-top: 172px;
+    margin-top: 11.94vw;*/
+    padding: 30px 30px 40px 30px;
+    padding: 2.083vw 2.083vw 2.77vw 2.083vw;
+    border: 1px solid goldenrod;
+    box-shadow: 2px 2px 2px navy;
+    border-radius: 10px;
+    border-radius: 0.69vw;
+    background: rgba(255, 255, 255, 0.75);
+}
+#clear, #outcome {
+	display: block;
+	float: left;
+	margin-right: 15px;
+	margin-right: 1.04vw;
+	margin-bottom: 15px;
+	margin-bottom: 1.04vw;
+}
+#openingDay {
+	margin: 0 auto;
+	width: 45%;
+	height: 200px;
+	height: 13.88vw;
+	margin-top: 20px;
+	margin-top: 1.38vw;
+	border: 1px solid goldenrod;
+	box-shadow: 2px 2px 2px navy;
+	border-radius: 10px;
+	border-radius: 0.69vw;
+	background: rgba(255, 255, 255, 0.75);
+}
+#openingDay h3, #bigBox h3 {
+	text-align: center;
+	color: royalblue;
+	text-shadow: 1px 1px 1px #DAA520;
+	cursor: pointer;
+}
+#bigBox h3 {text-align: left;}
+.clockdiv {
+	text-align: center;
+	color: royalblue;
+	text-shadow: 1px 1px 1px #DAA520;
+	font-size: 25px;
+	font-size: 1.73vw;
+}
+.clockdiv > div {
+	float: left;
+    padding: 15px;
+    padding: 1.041vw;
+    text-align: center;
+    background: rgba(65, 105, 225, 0.75);
+    color: royalblue;
+    margin-right: 10px;
+    margin-right: 0.69vw;
+    border-radius: 10px;
+    border-radius: 0.69vw;
+    box-shadow: 2px 2px 2px navy;
+    border: 1px solid goldenrod;
+}
+.marLeft {
+	margin-left: 110px;
+	margin-left: 7.63vw;
+}
+
+span.days, span.hours, span.minutes, span.seconds {
+	background: lightblue;
+	border-radius: 10px;
+	border-radius: 0.69vw;
+	padding: 7px;
+	box-shadow: 2px 2px 2px navy;
+}
+.smalltext {
+	margin-top: 10px;
+	margin-top: 0.69vw;
+	color: white;
+}
+#pball {
+	font-size: 80px;
+}
+#overlay {
+	height: 100%;
+	width: 100%;
+	background: rgba(65, 105, 225, 0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.isVisible {
+	display: block;
+}
+.isHidden {
+	display: none;
+}
+.targetStyle{
+	font-size: 90px;
+	margin-top: 50px;
+}
+/* Flash class and keyframe animation */
+.flashit{
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+/*************************************************************************
+						MEDIA QUERIES
+*************************************************************************/
+
+/* Hand held Portrait*/ 
+@media screen and (orientation: portrait){
+	#bigBox {
+		width: 75%;
+    	padding: 50px 50px 90px 50px;
+    	/*margin-top: 330px;*/
+	}
+	#bigBox h3 {
+		font-size: 40px;
+		margin-top: 0;
+	}
+	label {
+		font-size: 40px;
+		width: 115px;
+		margin-right: 25px;
+	}
+	input {
+		margin-bottom: 30px;
+	}
+	input[type=text] {
+		font-size: 40px;
+	}
+	.button {
+		padding: 10px;
+    	width: 110px;
+    	font-size: 30px;
+    	text-align: center;
+	}
+	#openingDay {
+		width: 75%;
+    	height: 340px;
+	}
+	#openingDay h3 {
+		font-size: 40px;
+	}
+	#countdown > div {
+		padding: 24px;
+	}
+	span.days, span.hours, span.minutes, span.seconds {
+		padding: 10px 20px;
+    	font-size: 50px;
+	}
+	.smalltext {
+		font-size: 40px;
+    	margin-top: 28px;
+	}
+	.marLeft {
+		margin-left: 25px;
+	}
+	h1{
+		font-size: 35px;
+	}
+	#page_wrapper {
+		margin-top: 343px;
+	}
+	h1#playball {
+		font-size: 120px;
+    	margin-left: 205px;
+    	margin-bottom: 20px;
+    	width: 546px;
+	}
+	p#scoreRequest {
+		font-size: 35px;
+	}
+}
+
+/* Hand held Landscape */
+@media screen and (orientation: landscape){
+	#page_wrapper {
+   		margin-top: 114px;
+	}
+	label {
+		width: 45px;
+		width: 4.74vw;
+	}
+	input {
+		margin-bottom: 15px;
+	}
+	#bigBox {
+		padding-bottom: 40px;
+		padding-bottom: 3.99vw;
+	}
+	#countdown > div {
+		padding: 15px; 
+	}
+	#openingDay {
+		height: 160px;
+	}
+	
+	.marLeft {
+		margin-left: 50px;
+	}
+
+}
+
+/* Tablet Portrait */
+@media screen and (min-width: 54em) and (orientation: portrait){
+	/*body {background: green;}*/
+}
+/* Tablet Landscape */
+@media screen and (min-width: 54em) and (orientation: landscape){
+	/*body {background: orange;}*/
+}
+/* Desktop */
+@media screen and (min-width: 74em){
+	#page_wrapper{
+		margin-top: 200px;
+	}
+	#openingDay {
+		height: 200px;
+	}
+	
+	.marLeft {
+		margin-left: 103px;
+	}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+		<title>Royals Score</title>
+		<link href="css/origStyle.css" rel="stylesheet" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="page_wrapper">
+			<div id="bigBox">
+
+				<h1 id="win">ROYALS WIN!! :)</h1>
+				<h1 id="pizzaWin">ROYALS WIN <br/> &amp; get 1/2 off at Papa John's :p</h1>
+				<H1 id="lose">Royals lose :(</H1>
+
+					<p id="scoreRequest">**Please enter a score for each team below**</p>
+
+				<h3 id="finalScore" class="isHidden">Final Score</h3>
+				<label for="royals" id="royals">Royals</label>
+				<input type="text" name="royals" id="homeTeam">
+
+				<label for="visitor">Visitors</label>
+				<input type="text" name="visitor" id="awayTeam">
+
+				<a href="#" class="button" id="outcome">Outcome</a>
+				<a href="#" class="button" id="clear">Clear</a>
+			</div><!--end #bigBox-->
+
+			<div id="openingDay">
+				<h3 id="target2">Countdown to Opening Day</h3>
+				<div class="clockdiv">
+					 	<div class="marLeft">
+		  				  <span class="days"></span>
+		  				  <div class="smalltext">Days</div>
+		  				</div>
+		  				<div>
+		  				  <span class="hours"></span>
+		  				  <div class="smalltext">Hours</div>
+		  				</div>
+		  				<div>
+		  				  <span class="minutes"></span>
+		  				  <div class="smalltext">Minutes</div>
+		  				</div>
+		  				<div>
+		  				  <span class="seconds"></span>
+		  				  <div class="smalltext">Seconds</div>
+		  				</div>
+		  		</div><!--end #clockdiv-->
+			</div><!--end #openingDay-->
+		</div><!--end #page_wrapper-->
+		<script src="js/script.js"></script>
+	</body><!--end body-->
+</html><!--end html-->
