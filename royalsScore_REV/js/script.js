@@ -159,14 +159,4 @@ myNode.addEventListener("click", function(e){
 
 });
 
-
-//hide h1(s) on page load
-window.onload = function(){
-	document.getElementById("win").classList.add('isHidden');
-	document.getElementById("lose").classList.add('isHidden');
-	document.getElementById("pizzaWin").classList.add('isHidden');
-};
-
-
-
 //https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/ -- javascript timer code source
